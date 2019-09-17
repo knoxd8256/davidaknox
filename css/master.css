@@ -1,0 +1,69 @@
+/*HTML and Body Styling*/
+
+html, body {
+    margin: 0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top right, #e0e0ff 10%, white, #e0e0ff 90%)
+}
+
+/*End HTML/Body Styling*/
+/*Navigation Styling*/
+
+nav {
+    background-color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header nav a {
+    text-indent: 0;
+    background-color: cadetblue;
+    color: white;
+    line-height: 200%;
+    font-size: 110%;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-property: background-color;
+}
+
+nav a[href="#"], nav a:hover, nav a:active, nav a:focus {
+    transition-duration: .2s;
+    transition-property: background-color;
+    background-color: #d0e0ff;
+    color: black;
+}
+
+
+/*End Navigation Styling*/
+/*Header Styling*/
+
+header {
+    background-color: aliceblue;
+}
+
+header a {
+    color: darkslategrey;
+    text-indent: 1em;
+    text-decoration: none;
+}
+
+/*End Header Styling*/
+/*Main Styling*/
+main {
+    padding: 2rem;
+}
