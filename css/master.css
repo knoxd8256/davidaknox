@@ -1,0 +1,73 @@
+body {
+    display:grid;
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+    margin:0;
+    padding:0;
+}
+body.index {
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "main nav";
+}
+main.index {
+  grid-row: 1;
+  grid-area: main;
+}
+main {
+  background-color: aliceblue;
+}
+nav.index {
+  background-color: white;
+  grid-area: nav;
+  display: grid;
+  grid-template-rows: 15vh 15vh 15vh;
+  padding: 5%;
+  align-content: center;
+}
+nav.index a {
+  line-height: 15vh;
+  color: black;
+  font-size: 150%;
+  text-decoration: none;
+  transition: 100ms;
+}
+.headerimg {
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+main p {
+  min-width: 30ch;
+  max-width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+nav.index a:hover {
+  color: lightblue;
+  transition: 200ms;
+}
+nav.bar {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+nav.bar a{
+  background: white;
+  color: darkslateblue;
+  font-size: 120%;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: 100ms;
+}
+nav.bar a.on:hover {
+  background:darkblue;
+  color:white;
+  transition: 200ms;
+}
+nav.bar a:hover, nav.bar a.on {
+  color: lightblue;
+  background-color: darkslateblue;
+  transition: 200ms;
+}
